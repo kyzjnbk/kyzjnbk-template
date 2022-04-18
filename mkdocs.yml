@@ -1,0 +1,15 @@
+site_name: kyzjnbk-template
+
+nav:
+    - Home: index.md
+
+repo_url: https://github.com/kyzjnbk/kyzjnbk-template
+theme:
+    name: material
+extra:
+    version: 0.1
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - def_list
