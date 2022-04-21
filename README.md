@@ -11,18 +11,18 @@
 
 ```shell
 .
-├── docs # 文档目录
+├── docs # 文档目录存放，站点根目录
 ├── Makefile
 ├── mkdocs.yml # 配置文件，定义了文档的总体目录、远程库位置和视觉主题
 ├── README.md # 项目介绍
 └── requirements.txt # 用于安装依赖的Python包
 ```
 
-下载此库至本地，并进入目录:
+下载此库至本地，并进入目录(**改成你自己的项目名,并移除此提示**):
 
 ```shell
-git clone https://github.com/kyzjnbk/kyzjnbk
-cd kyzjnbk
+git clone https://github.com/kyzjnbk/kyzjnbk-template
+cd kyzjnbk-template
 ```
 
 环境配置(需要python 3.x)：
