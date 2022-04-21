@@ -1,12 +1,16 @@
 site_name: kyzjnbk-template
 repo_url: https://github.com/kyzjnbk/kyzjnbk-template
+repo_name: GitHub
 copyright: Copyright &copy; kyzjbnk
 extra:
     version: 0.1
 
+#-----------------Navigation----------------------------------------
 nav:
     - Home: index.md
 
+
+#-----------------THEME---------------------------------------------
 theme: # https://squidfunk.github.io/mkdocs-material/getting-started/
     name: material
     language: zh # 中文，解决中文搜索问题
@@ -17,9 +21,9 @@ theme: # https://squidfunk.github.io/mkdocs-material/getting-started/
         # - navigation.expand
         - navigation.indexes
         # - navigation.instant
-        - navigation.sections
+        # - navigation.sections
         - navigation.tabs
-        # - navigation.tabs.sticky
+        - navigation.tabs.sticky
         - navigation.top
         - navigation.tracking
         - search.highlight
@@ -30,6 +34,21 @@ theme: # https://squidfunk.github.io/mkdocs-material/getting-started/
     font:
         text: Roboto
         code: Roboto Mono
+    palette:
+      - scheme: default
+        primary: white
+        accent: white
+        toggle:
+            icon: material/toggle-switch
+            name: Switch to dark mode
+        
+      - scheme: slate
+        primary: black
+        accent: black
+        toggle:
+            icon: material/toggle-switch-off-outline
+            name: Switch to light mode
+        # primary: white
 
 # Extensions
 markdown_extensions:
@@ -40,6 +59,9 @@ markdown_extensions:
     - footnotes
     - meta
     - md_in_html
+    - wikilinks:
+        base_url: ./
+        end_url: .md
     - toc:
         permalink: true
     - pymdownx.arithmatex:
@@ -75,5 +97,3 @@ plugins:
     - search
     - mkdocs-video # https://github.com/soulless-viewer/mkdocs-video
     - git-revision-date-localized # https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
-
-
