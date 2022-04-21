@@ -64,6 +64,9 @@ markdown_extensions:
         end_url: .md
     - toc:
         permalink: true
+    - pymdownx.snippets:
+        base_path: ['docs' ,'.']
+        check_paths: false
     - pymdownx.arithmatex:
         generic: true
     - pymdownx.betterem:
